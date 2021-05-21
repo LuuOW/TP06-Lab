@@ -1,0 +1,57 @@
+@import 'variables.css';
+
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(to left, var(--color-coral), var(--color-orange));
+    color: white;
+}
+
+@media all and (min-width:320px) {
+
+    
+
+
+    #menu-block {
+        background: var(--color-purple-light);  
+    }
+
+    #menu-block img {
+        width: 10%;
+    }
+
+    #menu-block #close {
+        display: none;
+    }
+
+    #menu-block #nav-links {
+        height: 0;
+        transition: height 1s ease;
+        overflow: hidden;
+    }
+
+    #menu-block:target #open {
+        display: none;
+    }
+
+    #menu-block:target #close {
+        display: block;
+    }
+
+    #menu-block:target #nav-links {
+        height: 20vh;
+        transition: height 1s ease;
+    }
+}
+
+@media all and (min-width:768px) {
+    
+}
+
+@media all and (min-width:1024px) {
+    
+}
